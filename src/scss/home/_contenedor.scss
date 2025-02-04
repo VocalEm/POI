@@ -1,0 +1,68 @@
+@use "base/variables" as v;
+
+.home_body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 8fr;
+  main {
+    background-color: blue;
+    grid-column: 2 / -1;
+    background-image: url(../../src/img/sbe3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  aside {
+    background: -webkit-linear-gradient(
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(
+      216deg,
+      #764ea6,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      216deg,
+      #764ea6,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-column: 1 / 2;
+  }
+  nav {
+    grid-column: 2 / -1;
+
+    background: -webkit-linear-gradient(
+      216deg,
+      #764ea6,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      216deg,
+      #764ea6,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}

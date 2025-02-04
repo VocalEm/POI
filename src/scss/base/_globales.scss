@@ -1,0 +1,153 @@
+@use "variables" as v;
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  font-family: v.$fuenteParrafo;
+  background-color: v.$fondo;
+}
+
+main {
+  flex: 1; /* Esto permite que el main ocupe el espacio disponible */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  font-size: 1.7rem;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+i {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0 0 0 0;
+  padding: 0;
+  font-family: v.$fuenteTitulo;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+body
+{
+    
+
+    &.fijar-body
+    {
+        overflow: hidden;
+    }
+
+    &.body-scroll
+    {
+        padding-top: 8.6rem;
+    }
+    
+}
+
+p
+{
+    font-size: 2rem;
+
+    line-height: 1.5;
+}
+
+.contenedor
+{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a
+{
+    text-decoration: none;
+
+}
+
+h1,h2,h3
+{
+    margin: 0 0 5rem 0;
+}
+
+h1
+{
+    font-size: 4rem;
+}
+
+h2
+{
+    font-size: 3.6rem;
+}
+
+h3
+{
+    font-size: 3rem;
+}
+*/
+p {
+  margin: 0;
+}
+
+.error {
+  color: red;
+}
+
+.oculto {
+  color: white !important;
+}
+
+.oculto-real {
+  display: none !important;
+}
+
+.inputStyle {
+  font-weight: 300;
+  font-size: 2rem;
+  width: 38rem;
+  height: 3rem;
+  border: none;
+  border-bottom: 0.1rem solid black;
+  &:focus {
+    outline: none;
+  }
+}

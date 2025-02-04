@@ -1,0 +1,26 @@
+.login__body {
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.login__formulario {
+  padding: 2rem;
+  background-color: white;
+  width: 50rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+}
