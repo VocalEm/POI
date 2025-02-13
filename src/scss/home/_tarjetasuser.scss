@@ -78,4 +78,28 @@
     #845ec2,
     #6471c4
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  &:hover {
+    background: rgb(106, 28, 189);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(106, 28, 189, 1) 0%,
+      rgba(117, 11, 157, 1) 43%,
+      rgba(39, 12, 173, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(106, 28, 189, 1) 0%,
+      rgba(117, 11, 157, 1) 43%,
+      rgba(39, 12, 173, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(106, 28, 189, 1) 0%,
+      rgba(117, 11, 157, 1) 43%,
+      rgba(39, 12, 173, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6a1cbd",endColorstr="#270cad",GradientType=1);
+    cursor: pointer;
+  }
 }
