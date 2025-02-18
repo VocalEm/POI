@@ -21,7 +21,7 @@
   position: absolute;
   z-index: 2;
   top: calc(
-    50% - 32rem
+    50% - 40rem
   ); /* Ajustar posición relativa a la altura del contenedor */
   left: calc(50% - 0rem); /* Centrar horizontalmente */
   transform: translate(-50%, -50%);
@@ -41,29 +41,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   z-index: 1;
   position: relative;
-  background-color: #fffff7;
+  background-color: rgba(255, 255, 255, 0.712);
   width: 80%;
   max-width: 80rem; /* Limitar el ancho máximo */
   height: 80%;
-  max-height: 80rem; /* Limitar la altura máxima */
+  max-height: 120rem; /* Limitar la altura máxima */
   border-radius: 10px;
   -webkit-box-shadow: 9px 10px 34px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 10px 34px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 9px 10px 34px 0px rgba(0, 0, 0, 0.75);
   margin-top: 15rem;
+  padding-top: 15rem;
 
-  section {
-    background-color: red;
+  .perfil_informacion_datos {
     height: 80%;
     width: 80%;
-    margin-top: 10rem;
-    padding: 5rem;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 5rem 5rem 5rem 5rem 5rem;
+    text-align: left;
     p {
       text-align: right;
     }
   }
+}
+.perfil_premio {
+  position: relative;
+  top: -8rem;
+  left: -2rem;
+}
+
+.perfil_informacion_premios {
+  text-align: center;
 }
