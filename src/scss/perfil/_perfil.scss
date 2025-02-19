@@ -11,3 +11,24 @@
     font-weight: 800;
   }
 }
+
+.perfil_informacion_premios {
+  .icono_flechaizquierda {
+    left: 15%;
+    top: 65%;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+  .icono_flechaderecha {
+    right: 20%;
+    top: 65%;
+  }
+}
+
+.perfil_informacion_botones {
+  width: 100rem;
+  background-color: red;
+  top: -10rem;
+  position: relative;
+}

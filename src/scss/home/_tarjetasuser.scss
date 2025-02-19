@@ -4,6 +4,21 @@
   width: 100%;
   display: flex;
   align-items: center;
+  &:hover {
+    background: -webkit-linear-gradient(
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+  }
 
   .chats_tarjeta_info {
     display: flex;
@@ -80,26 +95,64 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   &:hover {
-    background: rgb(106, 28, 189);
-    background: -moz-linear-gradient(
-      90deg,
-      rgba(106, 28, 189, 1) 0%,
-      rgba(117, 11, 157, 1) 43%,
-      rgba(39, 12, 173, 1) 100%
-    );
     background: -webkit-linear-gradient(
-      90deg,
-      rgba(106, 28, 189, 1) 0%,
-      rgba(117, 11, 157, 1) 43%,
-      rgba(39, 12, 173, 1) 100%
-    );
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
-      90deg,
-      rgba(106, 28, 189, 1) 0%,
-      rgba(117, 11, 157, 1) 43%,
-      rgba(39, 12, 173, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6a1cbd",endColorstr="#270cad",GradientType=1);
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     cursor: pointer;
+  }
+}
+
+.home_chats_tarjeta_header {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .chats_tarjeta_nombre,
+  .chats_tarjeta_mensaje {
+    font-family: v.$fuenteTitulo;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 3rem;
+  }
+
+  .chats_tarjeta_img {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin-left: 1rem;
+    overflow: hidden; /* Asegúrate de que cualquier desbordamiento del contenedor esté oculto */
+    display: flex; /* Para centrar la imagen */
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    object-fit: cover; /* Mantiene la relación de aspecto y rellena el contenedor */
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(
+      216deg,
+      #764ea6,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      216deg,
+      #764ea6,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    grid-column: 1 / 2;
   }
 }
