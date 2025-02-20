@@ -759,6 +759,7 @@ template {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  overflow-y: auto;
 }
 .home_body header {
   display: flex;
@@ -779,6 +780,7 @@ template {
   width: 100%;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 .home_chats_tarjeta:hover {
   background: -webkit-linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
@@ -879,9 +881,141 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 1/2;
   background: -webkit-linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  grid-column: 1/2;
+}
+
+.nav_headerchat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_botones {
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.nav_botones .nav_boton {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.nav_botones .nav_boton a {
+  background: -webkit-linear-gradient(338deg, #845ec2, #6471c4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #845ec2, #6471c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav_botones .nav_boton a:hover {
+  background: -webkit-linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.nav_botones .nav_boton a:hover i {
+  color: rgb(241, 241, 241);
+}
+.nav_botones .nav_boton a i {
+  color: #ead0ff;
+}
+
+.home_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_main_mensajes {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  padding: 1rem 5rem;
+  overflow-y: auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-bottom: 10rem;
+}
+.home_main_mensajes .home_main_mensaje {
+  width: 100%;
+  height: 10rem;
+  background-color: green;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.home_main_mensajes .home_main_mensaje .home_main_mensaje_individual {
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+}
+.home_main_mensajes .home_main_mensaje_externo {
+  width: 100%;
+  height: 10rem;
+  background-color: green;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.home_main_mensajes .home_main_mensaje_externo .home_main_mensaje_individual {
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+}
+
+.home_main_formulario {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: fixed;
+  bottom: 0;
+  background-color: yellow;
+  margin-top: 5rem;
+}
+.home_main_formulario .home_main_input {
+  width: 60%;
+  height: 65%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: none;
+  padding: 3rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  border-color: #797b7c;
+}
+.home_main_formulario .home_main_input:focus {
+  outline: none;
+}
+.home_main_formulario .home_main_boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  border-radius: 50%;
+  border-color: #797b7c;
+  color: white;
+  background: -webkit-linear-gradient(338deg, #c18fff, #8a33f5, #553fc5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #c99dff, #9b49ff, #513db4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.home_main_formulario .home_main_boton:hover {
+  background: -webkit-linear-gradient(338deg, #845ec2, #6471c4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #845ec2, #6471c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
 }
 
 .perfil_informacion_datos {

@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  text-decoration: none;
   &:hover {
     background: -webkit-linear-gradient(
       338deg,
@@ -141,6 +142,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column: 1 / 2;
     background: -webkit-linear-gradient(
       216deg,
       #764ea6,
@@ -153,6 +155,5 @@
       #5912af,
       #2b2060
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    grid-column: 1 / 2;
   }
 }
