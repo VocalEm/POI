@@ -22,30 +22,47 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body class="perfil_body">
     <div class="perfil_informacion">
+      <div class="perfil_foto">
+        <img src="src/img/perfil1.jpeg" alt="" />
+      </div>
       <section class="perfil_informacion_datos">
-        <h2>Nombre:</h2>
-        <p>Nombre de usuario</p>
-        <h2>Apellido Paterno:</h2>
-        <p>Perez</p>
-        <h2>Apellido Materno:</h2>
-        <p>Ramirez</p>
-        <h2>Fecha de Nacimiento:</h2>
-        <p>12/11/2003</p>
-        <h2>Correo Electronico:</h2>
-        <p>Correo electronico del usuario</p>
+        <div class="perfil_informacion_dato">
+          <h2>Nombre:</h2>
+          <p>Jose Emiliano</p>
+        </div>
+        <div class="perfil_informacion_dato">
+          <h2>Apellido Paterno:</h2>
+          <p>Frias</p>
+        </div>
+        <div class="perfil_informacion_dato">
+          <h2>Apellido Materno:</h2>
+          <p>Felix</p>
+        </div>
+        <div class="perfil_informacion_dato">
+          <h2>Correo Electronico:</h2>
+          <p>emilianofriasfelix@outlook.com</p>
+        </div>
       </section>
-
-      <h3>Premios</h3>
-
       <section class="perfil_informacion_premios">
-        <i class="fa fa-arrow-left fa-6x icono_flechaizquierda"></i>
-        <img class="perfil_premio" src="src/img/sticker2.png" alt="" />
-        <i class="fa fa-arrow-right fa-6x icono_flechaderecha"></i>
-      </section>
+        <h3>Premios</h3>
+        <div class="informacion_premiodash">
+          <i class="fa-solid fa-left-long fa-6x"></i>
 
-      <div class="perfil_informacion_botones"></div>
+          <div class="informacion_sticker">
+            <img src="src/img/Sticker-nave.webp " alt="" />
+          </div>
+          <i class="fa-solid fa-right-long fa-6x"></i>
+        </div>
+      </section>
+      <section class="perfil_informacion_botones">
+        <a class="informacion_boton" href="login.html">Cerrar Sesion</a>
+        <a class="informacion_boton" href="">Crear Grupos</a>
+        <a class="informacion_boton" href="">Agregar Amigos</a>
+        <a class="informacion_boton" href="home.html">Chat</a>
+      </section>
     </div>
   </body>
 </html>
