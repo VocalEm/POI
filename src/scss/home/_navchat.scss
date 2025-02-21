@@ -2,6 +2,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  -webkit-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+
+  .home_header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .nav_botones {
@@ -10,10 +19,14 @@
   justify-content: center;
   align-items: center;
   gap: 4rem;
+
   .nav_boton {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
+    -webkit-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
     a {
       background: -webkit-linear-gradient(
         338deg,

@@ -109,6 +109,9 @@
       #2b2060
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     cursor: pointer;
+    -webkit-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
   }
 }
 
