@@ -1,0 +1,47 @@
+@use "base/variables" as v;
+.tareas_body {
+  .tareas_form {
+    h3 {
+      font-size: 4rem;
+    }
+    .tareas_form_agregar {
+      input {
+        font-family: v.$fuenteParrafo;
+        font-size: 2.5rem;
+      }
+
+      button {
+        color: rgb(144, 89, 177);
+      }
+    }
+    .tareas_form_lista {
+      .tareas_form_tarea {
+        font-family: v.$fuenteTitulo;
+        border: 1px solid rgb(100, 100, 100);
+
+        p {
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+
+        .form_botonesTarea {
+          .form_editar {
+            background-color: rgb(240, 159, 9);
+            color: white;
+          }
+          .form_eliminar {
+            background-color: rgb(204, 0, 0);
+            color: white;
+          }
+        }
+        .form_completar {
+          border: 0.2rem solid rgb(228, 226, 226);
+          color: rgb(131, 131, 131);
+        }
+        .active {
+          color: rgb(16, 202, 16);
+        }
+      }
+    }
+  }
+}
