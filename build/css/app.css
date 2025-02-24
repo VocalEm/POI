@@ -1234,7 +1234,11 @@ template {
   height: 80%;
   padding: 3rem;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 .tareas_body .tareas_form .tareas_form_agregar {
   display: flex;
@@ -1311,7 +1315,11 @@ template {
   text-decoration: line-through;
   color: gray;
 }
-.tareas_body .tareas_form .tareas_botonRegreso {
+.tareas_body .tareas_form .contenedor {
+  display: flex;
+  justify-content: center;
+}
+.tareas_body .tareas_form .contenedor .tareas_botonRegreso {
   text-decoration: none;
   color: white;
   background-color: rgb(202, 42, 42);
@@ -1320,6 +1328,9 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 
 .tareas_body .tareas_form h3 {
@@ -1354,4 +1365,232 @@ template {
 }
 .tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .active {
   color: rgb(16, 202, 16);
+}
+.tareas_body .tareas_form .tareas_botonRegreso {
+  margin-top: 1rem;
+  font-family: "Urbanist", sans-serif;
+  font-size: 3rem;
+}
+
+.amigos_body .amigos_botonRegresocontainer {
+  background-color: rgba(255, 255, 255, 0.938);
+}
+.amigos_body .amigos_botonRegresocontainer {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.89);
+  -webkit-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+}
+.amigos_body .amigos_botonRegresocontainer .amigos_botonRegreso {
+  background-color: #0089ba;
+  font-size: 2rem;
+  font-weight: 500;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.89);
+  -webkit-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_info {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_info h3 {
+  font-size: 3rem;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_boton {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Urbanist", sans-serif;
+  background-color: rgb(161, 39, 218);
+  color: white;
+}
+
+.amigos_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.amigos_body .amigos_botonRegresocontainer {
+  padding: 2rem 2rem;
+  width: 98%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.amigos_body .amigos_botonRegresocontainer .amigos_botonRegreso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 20rem;
+  height: 8rem;
+}
+.amigos_body .amigos_cards {
+  width: 100%;
+  overflow-y: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.amigos_body .amigos_cards .amigos_cards_container {
+  width: 70%;
+  height: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card {
+  flex: 0 0 24%; /* 4 columnas, cada una ocupa 25% del ancho */
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_imagen {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  display: flex;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_imagen img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_boton {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.grupos_body {
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+.grupos_body .grupos_main {
+  background-color: rgba(255, 255, 255, 0.938);
+  width: 60%;
+  height: 80%;
+  display: flex;
+  padding: 2rem 0rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.grupos_body .grupos_main .grupos_botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.grupos_body .grupos_main input {
+  width: 60%;
+  height: 5rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 0.1rem solid rgb(196, 194, 194);
+  padding: 2rem;
+}
+.grupos_body .grupos_main .lista_usuarios {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.grupos_body .grupos_main .lista_usuarios .usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.grupos_body .grupos_main .lista_usuarios .usuario img {
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+}
+.grupos_body .grupos_main .lista_usuarios .usuario .usuario_info {
+  width: 80%;
+  height: auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.grupos_body .grupos_main {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.grupos_body .grupos_main .grupos_botones button,
+.grupos_body .grupos_main .grupos_botones a {
+  text-decoration: none;
+  width: 15rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid rgb(189, 189, 189);
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  color: white;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.grupos_body .grupos_main .grupos_botones button {
+  background-color: rgb(142, 14, 228);
+}
+.grupos_body .grupos_main .grupos_botones a {
+  background-color: rgb(216, 32, 32);
+}
+.grupos_body .grupos_main input {
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.grupos_body .grupos_main .lista_usuarios .usuario .usuario_info {
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
 }

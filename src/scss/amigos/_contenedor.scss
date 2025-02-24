@@ -1,0 +1,76 @@
+.amigos_body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .amigos_botonRegresocontainer {
+    padding: 2rem 2rem;
+    width: 98%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    .amigos_botonRegreso {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      width: 20rem;
+      height: 8rem;
+    }
+  }
+
+  .amigos_cards {
+    width: 100%;
+    overflow-y: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    .amigos_cards_container {
+      width: 70%;
+      height: 100%;
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .amigos_card {
+        flex: 0 0 24%; /* 4 columnas, cada una ocupa 25% del ancho */
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+
+          text-align: center;
+        }
+        .card_imagen {
+          border-radius: 50%;
+          width: 20rem;
+          height: 20rem;
+          background-color: white;
+          display: flex;
+
+          img {
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+        .card_boton {
+          padding: 1rem 2rem;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}
