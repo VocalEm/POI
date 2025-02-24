@@ -1,0 +1,57 @@
+@use "base/variables" as v;
+
+.amigos_body {
+  .amigos_botonRegresocontainer {
+    background-color: rgba(255, 255, 255, 0.938);
+  }
+  .amigos_botonRegresocontainer {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.89);
+    -webkit-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+    .amigos_botonRegreso {
+      background-color: v.$azulOscuro;
+      font-size: 2rem;
+      font-weight: 500;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+    }
+  }
+
+  .amigos_cards {
+    .amigos_cards_container {
+      .amigos_card {
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.89);
+        -webkit-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+        .card_info {
+          font-family: v.$fuenteParrafo;
+          font-size: 2.5rem;
+          h3 {
+            font-size: 3rem;
+          }
+        }
+        .card_imagen {
+          img {
+          }
+        }
+        .card_boton {
+          text-decoration: none;
+          font-size: 2rem;
+          font-weight: 600;
+          font-family: v.$fuenteTitulo;
+          background-color: rgb(161, 39, 218);
+          color: white;
+        }
+      }
+    }
+  }
+}

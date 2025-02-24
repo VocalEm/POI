@@ -1,0 +1,162 @@
+@use "base/variables" as v;
+.home_chats_tarjeta {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  &:hover {
+    background: -webkit-linear-gradient(
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+  }
+
+  .chats_tarjeta_info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chats_tarjeta_nombre,
+  .chats_tarjeta_mensaje {
+    font-family: v.$fuenteTitulo;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 3rem;
+  }
+
+  .chats_tarjeta_mensaje {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .mensaje-nuevo {
+    color: rgb(152, 241, 7);
+  }
+
+  .mensaje-leido {
+    color: rgb(184, 184, 184);
+  }
+
+  .chats_tarjeta_img {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin-left: 1rem;
+    overflow: hidden; /* Asegúrate de que cualquier desbordamiento del contenedor esté oculto */
+    display: flex; /* Para centrar la imagen */
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    object-fit: cover; /* Mantiene la relación de aspecto y rellena el contenedor */
+  }
+
+  .chats_tarjeta_notificacion {
+    border-radius: 50%;
+    background-color: rgb(156, 55, 55);
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: v.$fuenteTitulo;
+    padding-top: 1rem;
+    margin-left: 4rem;
+  }
+  .chats_tarjeta_span {
+    font-size: 1.5rem;
+    color: rgb(221, 221, 221);
+    font-weight: 400;
+    padding-left: 3rem;
+  }
+}
+
+.tarjeta-usuario {
+  background: -webkit-linear-gradient(
+    338deg,
+    #845ec2,
+    #6471c4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    338deg,
+    #845ec2,
+    #6471c4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  &:hover {
+    background: -webkit-linear-gradient(
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      338deg,
+      #5b3b81,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+    -webkit-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.home_chats_tarjeta_header {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .chats_tarjeta_nombre,
+  .chats_tarjeta_mensaje {
+    font-family: v.$fuenteTitulo;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 3rem;
+  }
+
+  .chats_tarjeta_img {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin-left: 1rem;
+    overflow: hidden; /* Asegúrate de que cualquier desbordamiento del contenedor esté oculto */
+    display: flex; /* Para centrar la imagen */
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    object-fit: cover; /* Mantiene la relación de aspecto y rellena el contenedor */
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2;
+    background: -webkit-linear-gradient(
+      216deg,
+      #764ea6,
+      #5912af,
+      #2b2060
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      216deg,
+      #764ea6,
+      #5912af,
+      #2b2060
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}

@@ -1,0 +1,55 @@
+@use "base/variables" as v;
+
+.grupos_body {
+  .grupos_main {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    .grupos_botones {
+      button,
+      a {
+        text-decoration: none;
+        width: 15rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.1rem solid rgb(189, 189, 189);
+        font-family: v.$fuenteParrafo;
+        font-size: 2rem;
+        color: white;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+      }
+
+      button {
+        background-color: rgb(142, 14, 228);
+      }
+
+      a {
+        background-color: rgb(216, 32, 32);
+      }
+    }
+
+    input {
+      font-family: v.$fuenteParrafo;
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .lista_usuarios {
+      .usuario {
+        img {
+        }
+        .usuario_info {
+          font-family: v.$fuenteParrafo;
+          font-size: 2rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

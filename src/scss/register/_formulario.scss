@@ -1,0 +1,57 @@
+@use "base/variables" as v;
+
+.register__formulario {
+  font-family: v.$fuenteParrafo;
+  font-size: 3rem;
+  label {
+    font-size: 3rem;
+    color: v.$morado;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: v.$azulOscuro;
+  }
+
+  .register_input {
+    margin-bottom: 2rem;
+    font-family: v.$fuenteParrafo;
+    font-size: 2.5rem;
+  }
+
+  .register_iniciosesion {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 5rem;
+    background-color: v.$azulOscuro;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: v.$rosapastel;
+    &:hover {
+      background-color: v.$azul;
+    }
+  }
+
+  .register_btniniciosesion {
+    background-color: v.$morado;
+    width: 100%;
+    height: 5rem;
+    text-decoration: none;
+    color: v.$rosapastel;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    &:hover {
+      background-color: v.$moradoclaro;
+    }
+  }
+}

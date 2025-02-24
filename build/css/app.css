@@ -1,0 +1,1596 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  font-family: "Outfit", sans-serif;
+  background-color: #eeeeee;
+}
+
+main {
+  flex: 1; /* Esto permite que el main ocupe el espacio disponible */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  font-size: 1.7rem;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+i {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+body
+{
+
+
+    &.fijar-body
+    {
+        overflow: hidden;
+    }
+
+    &.body-scroll
+    {
+        padding-top: 8.6rem;
+    }
+
+}
+
+p
+{
+    font-size: 2rem;
+
+    line-height: 1.5;
+}
+
+.contenedor
+{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a
+{
+    text-decoration: none;
+
+}
+
+h1,h2,h3
+{
+    margin: 0 0 5rem 0;
+}
+
+h1
+{
+    font-size: 4rem;
+}
+
+h2
+{
+    font-size: 3.6rem;
+}
+
+h3
+{
+    font-size: 3rem;
+}
+*/
+p {
+  margin: 0;
+}
+
+.error {
+  color: red;
+}
+
+.oculto {
+  color: white !important;
+}
+
+.oculto-real {
+  display: none !important;
+}
+
+.inputStyle {
+  font-weight: 300;
+  font-size: 2rem;
+  width: 38rem;
+  height: 3rem;
+  border: none;
+  border-bottom: 0.1rem solid black;
+}
+.inputStyle:focus {
+  outline: none;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.login__body {
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.login__formulario {
+  padding: 2rem;
+  background-color: white;
+  width: 50rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.login__formulario {
+  font-family: "Outfit", sans-serif;
+  font-size: 3rem;
+}
+.login__formulario label {
+  font-size: 3rem;
+  color: #845ec2;
+}
+.login__formulario h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #0089ba;
+}
+.login__formulario .login_input {
+  margin-bottom: 4rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+}
+.login__formulario .login_iniciosesion {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 5rem;
+  background-color: #0089ba;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff6ff;
+}
+.login__formulario .login_iniciosesion:hover {
+  background-color: #00a8cc;
+}
+.login__formulario .login_btnregistro {
+  background-color: #845ec2;
+  width: 100%;
+  height: 5rem;
+  text-decoration: none;
+  color: #fff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.login__formulario .login_btnregistro:hover {
+  background-color: #c493ff;
+}
+
+.login__header {
+  background-color: white;
+  width: 95%;
+  height: 10rem;
+  margin-top: 2rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 6rem;
+  align-items: center;
+  padding-right: 6rem;
+  text-align: center;
+  -webkit-box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+}
+.login__header h1 {
+  font-size: 3.5rem;
+  color: #845ec2;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s;
+}
+.login__header h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px; /* Ajusta el grosor según prefieras */
+  background-color: #845ec2; /* Color de la línea */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.login__header h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.login__header a {
+  text-decoration: none;
+}
+
+.login__header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: 20rem;
+}
+.login__header nav a {
+  font-family: "Outfit", sans-serif;
+  font-size: 3em;
+  color: #0089ba;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s;
+}
+.login__header nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Ajusta el grosor */
+  background-color: #00d2fc; /* Color de la línea */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.login__header nav a:hover {
+  color: #00d2fc;
+  border-bottom: none; /* Para que no se sume con la animación */
+}
+.login__header nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home_header {
+  background-color: #f5f5f5;
+  width: 98%;
+  height: 85%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.register__body {
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.register__formulario {
+  padding: 2rem;
+  background-color: white;
+  width: 80rem;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 8px 17px 0px rgba(0, 0, 0, 0.75);
+}
+.register__formulario div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.register__formulario div div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.register__formulario {
+  font-family: "Outfit", sans-serif;
+  font-size: 3rem;
+}
+.register__formulario label {
+  font-size: 3rem;
+  color: #845ec2;
+}
+.register__formulario h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #0089ba;
+}
+.register__formulario .register_input {
+  margin-bottom: 2rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+}
+.register__formulario .register_iniciosesion {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 5rem;
+  background-color: #0089ba;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff6ff;
+}
+.register__formulario .register_iniciosesion:hover {
+  background-color: #00a8cc;
+}
+.register__formulario .register_btniniciosesion {
+  background-color: #845ec2;
+  width: 100%;
+  height: 5rem;
+  text-decoration: none;
+  color: #fff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.register__formulario .register_btniniciosesion:hover {
+  background-color: #c493ff;
+}
+
+.home_body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 8fr;
+}
+.home_body main {
+  background-color: blue;
+  grid-column: 2/-1;
+  background-image: url(../../src/img/sbe3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home_body aside {
+  background: -webkit-linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+.home_body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  grid-column: 1/2;
+}
+.home_body nav {
+  grid-column: 2/-1;
+  background: -webkit-linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home_chats_tarjeta {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.home_chats_tarjeta:hover {
+  background: -webkit-linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+}
+.home_chats_tarjeta .chats_tarjeta_info {
+  display: flex;
+  flex-direction: column;
+}
+.home_chats_tarjeta .chats_tarjeta_nombre,
+.home_chats_tarjeta .chats_tarjeta_mensaje {
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-left: 3rem;
+}
+.home_chats_tarjeta .chats_tarjeta_mensaje {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.home_chats_tarjeta .mensaje-nuevo {
+  color: rgb(152, 241, 7);
+}
+.home_chats_tarjeta .mensaje-leido {
+  color: rgb(184, 184, 184);
+}
+.home_chats_tarjeta .chats_tarjeta_img {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  margin-left: 1rem;
+  overflow: hidden; /* Asegúrate de que cualquier desbordamiento del contenedor esté oculto */
+  display: flex; /* Para centrar la imagen */
+  align-items: center; /* Centra la imagen verticalmente */
+  justify-content: center; /* Centra la imagen horizontalmente */
+  object-fit: cover; /* Mantiene la relación de aspecto y rellena el contenedor */
+}
+.home_chats_tarjeta .chats_tarjeta_notificacion {
+  border-radius: 50%;
+  background-color: rgb(156, 55, 55);
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  padding-top: 1rem;
+  margin-left: 4rem;
+}
+.home_chats_tarjeta .chats_tarjeta_span {
+  font-size: 1.5rem;
+  color: rgb(221, 221, 221);
+  font-weight: 400;
+  padding-left: 3rem;
+}
+
+.tarjeta-usuario {
+  background: -webkit-linear-gradient(338deg, #845ec2, #6471c4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #845ec2, #6471c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.tarjeta-usuario:hover {
+  background: -webkit-linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+  -webkit-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+}
+
+.home_chats_tarjeta_header {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.home_chats_tarjeta_header .chats_tarjeta_nombre,
+.home_chats_tarjeta_header .chats_tarjeta_mensaje {
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-left: 3rem;
+}
+.home_chats_tarjeta_header .chats_tarjeta_img {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  margin-left: 1rem;
+  overflow: hidden; /* Asegúrate de que cualquier desbordamiento del contenedor esté oculto */
+  display: flex; /* Para centrar la imagen */
+  align-items: center; /* Centra la imagen verticalmente */
+  justify-content: center; /* Centra la imagen horizontalmente */
+  object-fit: cover; /* Mantiene la relación de aspecto y rellena el contenedor */
+}
+.home_chats_tarjeta_header header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  background: -webkit-linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav_headerchat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+}
+.nav_headerchat .home_header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_botones {
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.nav_botones .nav_boton {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 30px 56px -17px rgba(0, 0, 0, 0.75);
+}
+.nav_botones .nav_boton a {
+  background: -webkit-linear-gradient(338deg, #845ec2, #6471c4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #845ec2, #6471c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav_botones .nav_boton a:hover {
+  background: -webkit-linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #5b3b81, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.nav_botones .nav_boton a:hover i {
+  color: rgb(241, 241, 241);
+}
+.nav_botones .nav_boton a i {
+  color: #ead0ff;
+}
+
+.home_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_main_mensajes {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 5rem;
+  overflow-y: auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-bottom: 10rem;
+}
+.home_main_mensajes .mensaje_foto {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  margin-right: 1rem;
+  overflow-y: auto;
+}
+.home_main_mensajes .mensaje_foto img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+}
+.home_main_mensajes .mensaje_texto {
+  background-color: rgba(255, 255, 255, 0.863);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+  overflow: auto;
+  height: auto;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+}
+.home_main_mensajes .home_main_mensaje {
+  width: 100%;
+  height: auto;
+  min-height: 10rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.home_main_mensajes .home_main_mensaje img {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  max-height: 50rem;
+  object-fit: cover;
+}
+.home_main_mensajes .home_main_mensaje .home_main_mensaje_individual {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-height: 100%;
+  height: auto;
+}
+.home_main_mensajes .home_main_mensaje .home_main_mensaje_individual .mensaje_foto {
+  margin-left: 1rem;
+  -webkit-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+}
+.home_main_mensajes .home_main_mensaje_externo {
+  width: 100%;
+  height: auto;
+  min-height: 10rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.home_main_mensajes .home_main_mensaje_externo img {
+  max-height: 30rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  max-height: 50rem;
+  object-fit: cover;
+}
+.home_main_mensajes .home_main_mensaje_externo .home_main_mensaje_individual {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  height: auto;
+}
+.home_main_mensajes .home_main_mensaje_externo .home_main_mensaje_individual .mensaje_foto {
+  margin-left: 1rem;
+  -webkit-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
+}
+
+.home_main_formulario {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: fixed;
+  bottom: 0;
+  margin-top: 5rem;
+}
+.home_main_formulario .home_main_boton_foto {
+  width: 5rem;
+  height: 5rem;
+  background-color: red;
+}
+.home_main_formulario .home_main_input {
+  width: 60%;
+  height: 65%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: none;
+  padding: 3rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  border-color: #797b7c;
+  -webkit-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+}
+.home_main_formulario .home_main_input:focus {
+  outline: none;
+}
+.home_main_formulario .home_main_boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  border-radius: 50%;
+  border-color: #797b7c;
+  color: white;
+  -webkit-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  background: -webkit-linear-gradient(338deg, #c18fff, #8a33f5, #553fc5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #c99dff, #9b49ff, #513db4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.home_main_formulario .home_main_boton:hover {
+  background: -webkit-linear-gradient(338deg, #845ec2, #6471c4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(338deg, #845ec2, #6471c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+}
+
+.perfil_body .perfil_informacion .perfil_informacion_datos .perfil_informacion_dato {
+  font-size: 2rem;
+}
+.perfil_body .perfil_informacion .perfil_informacion_datos .perfil_informacion_dato h2 {
+  font-weight: bold;
+}
+.perfil_body .perfil_informacion_premios {
+  font-family: "Urbanist", sans-serif;
+}
+.perfil_body .perfil_informacion_botones .informacion_boton {
+  font-family: "Urbanist", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  background: -webkit-linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(216deg, #764ea6, #5912af, #2b2060); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.perfil_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.perfil_body .perfil_informacion {
+  background-color: rgba(255, 255, 255, 0.747);
+  width: 80rem;
+  height: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+}
+.perfil_body .perfil_informacion .perfil_foto {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+.perfil_body .perfil_informacion .perfil_foto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.perfil_body .perfil_informacion .perfil_informacion_datos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 5rem;
+}
+.perfil_body .perfil_informacion .perfil_informacion_datos .perfil_informacion_dato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.perfil_body .perfil_informacion_premios {
+  width: 100%;
+  margin: 2rem 0rem;
+  height: auto;
+  text-align: center;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash .informacion_sticker {
+  width: 20rem;
+  height: 25rem;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash .informacion_sticker img {
+  object-fit: cover;
+  height: 100%;
+}
+.perfil_body .perfil_informacion_botones {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.perfil_body .perfil_informacion_botones .informacion_boton {
+  width: 18rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+}
+
+.tareas_body {
+  background-image: url(../../src/img/sbe3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tareas_body .tareas_form {
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 40%;
+  height: 80%;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.tareas_body .tareas_form .tareas_form_agregar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.tareas_body .tareas_form .tareas_form_agregar input {
+  width: 70%;
+  height: 5rem;
+  border: none;
+  padding: 0.5rem;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  padding: 2rem;
+}
+.tareas_body .tareas_form .tareas_form_agregar button {
+  width: 7rem;
+  height: 7rem;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.tareas_body .tareas_form .tareas_form_lista {
+  overflow-y: auto;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 1rem 1rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .form_botonesTarea {
+  display: flex;
+  gap: 1rem;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .form_botonesTarea .form_editar {
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .form_botonesTarea .form_eliminar {
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .form_completar {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareacompleta {
+  text-decoration: line-through;
+  color: gray;
+}
+.tareas_body .tareas_form .contenedor {
+  display: flex;
+  justify-content: center;
+}
+.tareas_body .tareas_form .contenedor .tareas_botonRegreso {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(202, 42, 42);
+  width: 30rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.tareas_body .tareas_form h3 {
+  font-size: 4rem;
+}
+.tareas_body .tareas_form .tareas_form_agregar input {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+}
+.tareas_body .tareas_form .tareas_form_agregar button {
+  color: rgb(144, 89, 177);
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea {
+  font-family: "Urbanist", sans-serif;
+  border: 1px solid rgb(100, 100, 100);
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea p {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .form_botonesTarea .form_editar {
+  background-color: rgb(240, 159, 9);
+  color: white;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .form_botonesTarea .form_eliminar {
+  background-color: rgb(204, 0, 0);
+  color: white;
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .form_completar {
+  border: 0.2rem solid rgb(228, 226, 226);
+  color: rgb(131, 131, 131);
+}
+.tareas_body .tareas_form .tareas_form_lista .tareas_form_tarea .active {
+  color: rgb(16, 202, 16);
+}
+.tareas_body .tareas_form .tareas_botonRegreso {
+  margin-top: 1rem;
+  font-family: "Urbanist", sans-serif;
+  font-size: 3rem;
+}
+
+.amigos_body .amigos_botonRegresocontainer {
+  background-color: rgba(255, 255, 255, 0.938);
+}
+.amigos_body .amigos_botonRegresocontainer {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.89);
+  -webkit-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+}
+.amigos_body .amigos_botonRegresocontainer .amigos_botonRegreso {
+  background-color: #0089ba;
+  font-size: 2rem;
+  font-weight: 500;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.89);
+  -webkit-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 18px 42px -13px rgba(0, 0, 0, 0.75);
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_info {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_info h3 {
+  font-size: 3rem;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_boton {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Urbanist", sans-serif;
+  background-color: rgb(161, 39, 218);
+  color: white;
+}
+
+.amigos_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.amigos_body .amigos_botonRegresocontainer {
+  padding: 2rem 2rem;
+  width: 98%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.amigos_body .amigos_botonRegresocontainer .amigos_botonRegreso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 20rem;
+  height: 8rem;
+}
+.amigos_body .amigos_cards {
+  width: 100%;
+  overflow-y: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.amigos_body .amigos_cards .amigos_cards_container {
+  width: 70%;
+  height: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card {
+  flex: 0 0 24%; /* 4 columnas, cada una ocupa 25% del ancho */
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_imagen {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  display: flex;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_imagen img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.amigos_body .amigos_cards .amigos_cards_container .amigos_card .card_boton {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.grupos_body {
+  background-image: url(../../src/img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+.grupos_body .grupos_main {
+  background-color: rgba(255, 255, 255, 0.938);
+  width: 60%;
+  height: 80%;
+  display: flex;
+  padding: 2rem 0rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.grupos_body .grupos_main .grupos_botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.grupos_body .grupos_main input {
+  width: 60%;
+  height: 5rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 0.1rem solid rgb(196, 194, 194);
+  padding: 2rem;
+}
+.grupos_body .grupos_main .lista_usuarios {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.grupos_body .grupos_main .lista_usuarios .usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.grupos_body .grupos_main .lista_usuarios .usuario img {
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+}
+.grupos_body .grupos_main .lista_usuarios .usuario .usuario_info {
+  width: 80%;
+  height: auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.grupos_body .grupos_main {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.grupos_body .grupos_main .grupos_botones button,
+.grupos_body .grupos_main .grupos_botones a {
+  text-decoration: none;
+  width: 15rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid rgb(189, 189, 189);
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  color: white;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.grupos_body .grupos_main .grupos_botones button {
+  background-color: rgb(142, 14, 228);
+}
+.grupos_body .grupos_main .grupos_botones a {
+  background-color: rgb(216, 32, 32);
+}
+.grupos_body .grupos_main input {
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.grupos_body .grupos_main .lista_usuarios .usuario .usuario_info {
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
