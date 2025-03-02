@@ -13,6 +13,41 @@
   }
   .perfil_informacion_premios {
     font-family: v.$fuenteTitulo;
+    .informacion_premiodash {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .fa-left-long,
+      .fa-right-long {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      .informacion_sticker {
+        display: flex;
+        overflow: hidden;
+        width: 20rem;
+        height: 25rem;
+        position: relative;
+        img {
+          min-width: 100%;
+          transition: opacity 0.5s ease;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        img.hidden {
+          opacity: 0;
+          pointer-events: none;
+        }
+        img.visible {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+    }
   }
   .perfil_informacion_botones {
     .informacion_boton {

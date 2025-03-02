@@ -23,159 +23,53 @@
     ></script>
   </head>
   <body class="tareas_body">
-    <form class="tareas_form" action="">
+    <form method="POST" class="tareas_form" action="">
       <h3>Titulo del grupo</h3>
 
       <div class="tareas_form_agregar">
-        <input type="text" placeholder="Ingresa tu tarea" />
-        <button type="submit" class="form_crear">
+        <input name="nombre_tarea" type="text" placeholder="Ingresa tu tarea" />
+        <button name="crear_tarea" type="submit" class="form_crear">
           <i class="fa-solid fa-plus fa-3x"></i>
         </button>
       </div>
 
       <div class="tareas_form_lista">
         <div class="tareas_form_tarea">
-          <button class="form_completar" type="submit">
+          <button name="completar_tarea" class="form_completar" type="submit">
             <i class="fa-solid fa-check fa-3x"></i>
           </button>
 
           <p>Titulo de la tarea</p>
 
           <div class="form_botonesTarea">
-            <button class="form_editar">
+            <button type="submit" name="editar tarea" class="form_editar">
               <i class="fa-solid fa-pen-to-square fa-3x"></i>
             </button>
 
-            <button class="form_eliminar">
-              <i class="fa-solid fa-trash fa-3x"></i>
-            </button>
-          </div>
-        </div>
-        <div class="tareas_form_tarea">
-          <button class="form_completar" type="submit">
-            <i class="fa-solid fa-check fa-3x"></i>
-          </button>
-
-          <p>Titulo de la tarea</p>
-
-          <div class="form_botonesTarea">
-            <button class="form_editar">
-              <i class="fa-solid fa-pen-to-square fa-3x"></i>
-            </button>
-
-            <button class="form_eliminar">
+            <button type="submit" name="eliminar_tarea" class="form_eliminar">
               <i class="fa-solid fa-trash fa-3x"></i>
             </button>
           </div>
         </div>
 
         <div class="tareas_form_tarea">
-          <button class="form_completar" type="submit">
+          <button name="completar_tarea" class="form_completar" type="submit">
             <i class="fa-solid fa-check fa-3x"></i>
           </button>
 
           <p>Titulo de la tarea</p>
 
           <div class="form_botonesTarea">
-            <button class="form_editar">
+            <button type="submit" name="editar tarea" class="form_editar">
               <i class="fa-solid fa-pen-to-square fa-3x"></i>
             </button>
 
-            <button class="form_eliminar">
+            <button type="submit" name="eliminar_tarea" class="form_eliminar">
               <i class="fa-solid fa-trash fa-3x"></i>
             </button>
           </div>
         </div>
 
-        <div class="tareas_form_tarea">
-          <button class="form_completar" type="submit">
-            <i class="fa-solid fa-check fa-3x"></i>
-          </button>
-
-          <p>Titulo de la tarea</p>
-
-          <div class="form_botonesTarea">
-            <button class="form_editar">
-              <i class="fa-solid fa-pen-to-square fa-3x"></i>
-            </button>
-
-            <button class="form_eliminar">
-              <i class="fa-solid fa-trash fa-3x"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="tareas_form_tarea">
-          <button class="form_completar" type="submit">
-            <i class="fa-solid fa-check fa-3x"></i>
-          </button>
-
-          <p>Titulo de la tarea</p>
-
-          <div class="form_botonesTarea">
-            <button class="form_editar">
-              <i class="fa-solid fa-pen-to-square fa-3x"></i>
-            </button>
-
-            <button class="form_eliminar">
-              <i class="fa-solid fa-trash fa-3x"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="tareas_form_tarea">
-          <button class="form_completar" type="submit">
-            <i class="fa-solid fa-check fa-3x"></i>
-          </button>
-
-          <p>Titulo de la tarea</p>
-
-          <div class="form_botonesTarea">
-            <button class="form_editar">
-              <i class="fa-solid fa-pen-to-square fa-3x"></i>
-            </button>
-
-            <button class="form_eliminar">
-              <i class="fa-solid fa-trash fa-3x"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="tareas_form_tarea">
-          <button class="form_completar" type="submit">
-            <i class="fa-solid fa-check fa-3x"></i>
-          </button>
-
-          <p>Titulo de la tarea</p>
-
-          <div class="form_botonesTarea">
-            <button class="form_editar">
-              <i class="fa-solid fa-pen-to-square fa-3x"></i>
-            </button>
-
-            <button class="form_eliminar">
-              <i class="fa-solid fa-trash fa-3x"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="tareas_form_tarea">
-          <button class="form_completar" type="submit">
-            <i class="fa-solid fa-check fa-3x"></i>
-          </button>
-
-          <p>Titulo de la tarea</p>
-
-          <div class="form_botonesTarea">
-            <button class="form_editar">
-              <i class="fa-solid fa-pen-to-square fa-3x"></i>
-            </button>
-
-            <button class="form_eliminar">
-              <i class="fa-solid fa-trash fa-3x"></i>
-            </button>
-          </div>
-        </div>
         <div class="tareas_form_tarea tareacompleta">
           <button class="form_completar active" type="submit">
             <i class="fa-solid fa-check fa-3x"></i>

@@ -471,7 +471,6 @@ template {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10rem;
 }
 
 .login__formulario {
@@ -651,19 +650,19 @@ template {
   background-image: url(../../src/img/spaceBackground.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10rem;
+  gap: 2rem;
 }
 
 .register__formulario {
+  margin-bottom: 2rem;
   padding: 2rem;
   background-color: white;
   width: 80rem;
-  height: 70rem;
+  height: 98%;
   display: flex;
   flex-direction: column;
   -webkit-border-radius: 20px;
@@ -745,7 +744,6 @@ template {
 }
 .home_body main {
   background-color: blue;
-  grid-column: 2/-1;
   background-image: url(../../src/img/sbe3.png);
   background-size: cover;
   background-position: center;
@@ -941,131 +939,18 @@ template {
   color: #ead0ff;
 }
 
-.home_main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.home_main_mensajes {
-  width: 100%;
-  height: 100%;
-  padding: 1rem 5rem;
-  overflow-y: auto;
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  padding-bottom: 10rem;
-}
-.home_main_mensajes .mensaje_foto {
-  border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  margin-right: 1rem;
-  overflow-y: auto;
-}
-.home_main_mensajes .mensaje_foto img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -webkit-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-  box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-}
-.home_main_mensajes .mensaje_texto {
-  background-color: rgba(255, 255, 255, 0.863);
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  font-family: "Outfit", sans-serif;
-  font-size: 1.5rem;
-  overflow: auto;
-  height: auto;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -webkit-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
-}
-.home_main_mensajes .home_main_mensaje {
-  width: 100%;
-  height: auto;
-  min-height: 10rem;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.home_main_mensajes .home_main_mensaje img {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  max-height: 50rem;
-  object-fit: cover;
-}
-.home_main_mensajes .home_main_mensaje .home_main_mensaje_individual {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  min-height: 100%;
-  height: auto;
-}
-.home_main_mensajes .home_main_mensaje .home_main_mensaje_individual .mensaje_foto {
-  margin-left: 1rem;
-  -webkit-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-  box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-}
-.home_main_mensajes .home_main_mensaje_externo {
-  width: 100%;
-  height: auto;
-  min-height: 10rem;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.home_main_mensajes .home_main_mensaje_externo img {
-  max-height: 30rem;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  max-height: 50rem;
-  object-fit: cover;
-}
-.home_main_mensajes .home_main_mensaje_externo .home_main_mensaje_individual {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  min-height: 100%;
-  height: auto;
-}
-.home_main_mensajes .home_main_mensaje_externo .home_main_mensaje_individual .mensaje_foto {
-  margin-left: 1rem;
-  -webkit-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-  box-shadow: 7px 36px 41px -24px rgba(0, 0, 0, 0.75);
-}
-
 .home_main_formulario {
   width: 100%;
   height: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  margin-top: 5rem;
 }
 .home_main_formulario .home_main_boton_foto {
   width: 5rem;
   height: 5rem;
-  background-color: red;
 }
 .home_main_formulario .home_main_input {
   width: 60%;
@@ -1073,14 +958,15 @@ template {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  border: none;
-  padding: 3rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem 2rem;
   font-family: "Outfit", sans-serif;
   font-size: 2rem;
   border-color: #797b7c;
   -webkit-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  margin: 0 1rem;
 }
 .home_main_formulario .home_main_input:focus {
   outline: none;
@@ -1098,6 +984,8 @@ template {
   -webkit-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 13px 33px -7px rgba(0, 0, 0, 0.75);
+  background: none;
+  cursor: pointer;
   background: -webkit-linear-gradient(338deg, #c18fff, #8a33f5, #553fc5); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(338deg, #c99dff, #9b49ff, #513db4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -1105,6 +993,78 @@ template {
   background: -webkit-linear-gradient(338deg, #845ec2, #6471c4); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(338deg, #845ec2, #6471c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: black;
+}
+
+.home_main_input_file {
+  display: none;
+}
+
+.home_main {
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.chat_container {
+  height: 90%;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chat_mensaje {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+.chat_mensaje.usuario {
+  display: flex;
+  justify-content: right;
+  align-self: flex-end;
+}
+
+.chat_mensaje.otro {
+  display: flex;
+  justify-content: left;
+  align-self: flex-start;
+}
+
+.mensaje_img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mensaje_contenido {
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.774);
+  border-radius: 10px;
+  padding: 2rem;
+  gap: 1rem;
+}
+.mensaje_contenido img {
+  border-radius: 10px;
+  max-width: 30rem;
+}
+
+.mensaje_nombre {
+  font-weight: bold;
+  margin: 0;
+}
+
+.mensaje_texto {
+  margin: 0;
 }
 
 .perfil_body .perfil_informacion .perfil_informacion_datos .perfil_informacion_dato {
@@ -1115,6 +1075,42 @@ template {
 }
 .perfil_body .perfil_informacion_premios {
   font-family: "Urbanist", sans-serif;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash .fa-left-long,
+.perfil_body .perfil_informacion_premios .informacion_premiodash .fa-right-long {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash .fa-left-long:hover,
+.perfil_body .perfil_informacion_premios .informacion_premiodash .fa-right-long:hover {
+  transform: scale(1.2);
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash .informacion_sticker {
+  display: flex;
+  overflow: hidden;
+  width: 20rem;
+  height: 25rem;
+  position: relative;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash .informacion_sticker img {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash .informacion_sticker img.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.perfil_body .perfil_informacion_premios .informacion_premiodash .informacion_sticker img.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 .perfil_body .perfil_informacion_botones .informacion_boton {
   font-family: "Urbanist", sans-serif;

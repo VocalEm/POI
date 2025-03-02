@@ -23,8 +23,9 @@
     ></script>
   </head>
   <body class="grupos_body">
-    <form class="grupos_main">
+    <form action="" method="" class="grupos_main">
       <input
+        name="nombre_grupo"
         type="text"
         class="nombre_grupo"
         placeholder="Ingrese el nombre del Grupo"
@@ -36,51 +37,35 @@
           <div class="usuario_info">
             <p>Jose Emiliano Frias Felix</p>
           </div>
-          <input type="checkbox" />
-        </div>
-
-        <div class="usuario">
-          <img src="src/img/perfil2.jpg" alt="" />
-          <div class="usuario_info">
-            <p>Jose Emiliano Frias Felix</p>
-          </div>
-          <input type="checkbox" />
-        </div>
-
-        <div class="usuario">
-          <img src="src/img/perfil2.jpg" alt="" />
-          <div class="usuario_info">
-            <p>Jose Emiliano Frias Felix</p>
-          </div>
-          <input type="checkbox" />
-        </div>
-
-        <div class="usuario">
-          <img src="src/img/perfil2.jpg" alt="" />
-          <div class="usuario_info">
-            <p>Jose Emiliano Frias Felix</p>
-          </div>
-          <input type="checkbox" />
+          <input name="seleccionar_grupo" type="checkbox" />
         </div>
         <div class="usuario">
           <img src="src/img/perfil2.jpg" alt="" />
           <div class="usuario_info">
             <p>Jose Emiliano Frias Felix</p>
           </div>
-          <input type="checkbox" />
+          <input name="seleccionar_grupo" type="checkbox" />
         </div>
-
         <div class="usuario">
           <img src="src/img/perfil2.jpg" alt="" />
           <div class="usuario_info">
             <p>Jose Emiliano Frias Felix</p>
           </div>
-          <input type="checkbox" />
+          <input name="seleccionar_grupo" type="checkbox" />
+        </div>
+        <div class="usuario">
+          <img src="src/img/perfil2.jpg" alt="" />
+          <div class="usuario_info">
+            <p>Jose Emiliano Frias Felix</p>
+          </div>
+          <input name="seleccionar_grupo" type="checkbox" />
         </div>
       </div>
 
       <div class="grupos_botones">
-        <button class="boton_crear">Crear Grupo</button>
+        <button type="submit" name="crear_grupo" class="boton_crear">
+          Crear Grupo
+        </button>
         <a href="perfil.html">Regresar</a>
       </div>
     </form>
